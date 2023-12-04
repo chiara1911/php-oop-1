@@ -23,6 +23,17 @@ class Movie
     $this->title = $title;
     $this->poster_path = $poster_path;
 }
+function printCard(){
+    $image = $this->poster_path;
+    $title = $this->title;
+    $original_title = $this->original_title;
+    include __DIR__ ."/../View/card.php";
+    
+}
+
+function printFlag(){
+    
+}
 }
 
 
@@ -34,6 +45,7 @@ foreach ($movieEl as $el)
 $movies [] = new Movie($el["id"], $el["original_title"], $el["title"], $el["poster_path"]) ;
 }
 
-var_dump($movies);
+
+// var_dump($movies);
 
 ?>
