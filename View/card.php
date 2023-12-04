@@ -4,6 +4,8 @@
         <div class="card-body">
             <h5><?= $original_title ?></h5>
             <p><?= $title ?></p>
+            
+            <img src="/img/<?= $language?>.svg" alt="<?= $language?>">
          
             
         </div>

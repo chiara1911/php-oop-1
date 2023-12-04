@@ -2,7 +2,7 @@
 
 include __DIR__ ."/View/header.php";
 include __DIR__ ."/Model/movie.php";
-include __DIR__ ."/Model/genre.php";
+
 ?>
 
 <div class="row">
