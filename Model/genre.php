@@ -15,9 +15,13 @@ public function __construct($name){
 }
 $genreList = file_get_contents(__DIR__ ."/genre_db.json");
 // var_dump($genreList);
-$genreEl = json_decode($genreList, true);
+$genre = json_decode($genreList, true);
 
-var_dump($genreEl);
+$genres=[];
+foreach($genre as $el){
+    $genres[] = new Genre($el);
+}
+// var_dump($genres);
 
 
 ?>
